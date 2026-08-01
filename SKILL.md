@@ -30,6 +30,14 @@ tags:
 - 用户需要风格探索或 Mood Board
 - 用户提到"Logo""VI""品牌色""海报""Banner""视觉设计""平面设计""物料"等关键词
 
+## 记忆系统
+
+本技能遵循 `~/.workbuddy/MEMORY.md` 中定义的融合记忆管理规则（v2.1）。
+
+- **执行前**：读取 `.workbuddy/memory/MEMORY.md` 本技能对应分段 + `.workbuddy/memory/YYYY-MM-DD.md`（今日日志，如存在）
+- **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.workbuddy/memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
+- **轮转检查**：写入后检查日志是否超 30 天 / 35 篇，满足则按规则归档
+
 ## 执行流程
 
 按以下 5 步顺序执行，不可跳步。
