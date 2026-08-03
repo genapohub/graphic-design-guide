@@ -38,7 +38,7 @@ tags:
 - **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.workbuddy/memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
 - **轮转检查**：
   - **独立使用**：按 `references/记忆规则.md` 中的触发条件和完整轮转算法执行归档
-  - **被 team-orchestrator 调度时**：跳过轮转检查，由调度官 Step 7 统一执行全局轮转
+  - **被 team-orchestrator 调度时**：跳过全部记忆操作（写入 + 轮转），由调度官 Step 6（写日志）/ Step 7（轮转归档）统一处理
 
 ## 执行流程
 
