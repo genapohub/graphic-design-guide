@@ -34,8 +34,8 @@ tags:
 
 本技能的完整记忆管理规则（写日志/轮转归档/自清理）定义在 `references/记忆规则.md`，执行前必须读取。
 
-- **执行前**：读取 `references/记忆规则.md` 中的 Step 0 加载规范 + `.workbuddy/memory/MEMORY.md` 本技能对应分段 + `.workbuddy/memory/YYYY-MM-DD.md`（今日日志，如存在）
-- **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.workbuddy/memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
+- **执行前**：读取 `references/记忆规则.md` 中的 Step 0 加载规范 + `.skills-memory/MEMORY.md` 本技能对应分段 + `.skills-memory/YYYY-MM-DD.md`（今日日志，如存在）
+- **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.skills-memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
 - **轮转检查**：
   - **独立使用**：按 `references/记忆规则.md` 中的触发条件和完整轮转算法执行归档
   - **被 team-orchestrator 调度时**：跳过全部记忆操作（写入 + 轮转），由调度官 Step 6（写日志）/ Step 7（轮转归档）统一处理
