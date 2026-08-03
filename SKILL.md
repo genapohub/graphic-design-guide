@@ -36,7 +36,9 @@ tags:
 
 - **执行前**：读取 `references/记忆规则.md` 中的 Step 0 加载规范 + `.workbuddy/memory/MEMORY.md` 本技能对应分段 + `.workbuddy/memory/YYYY-MM-DD.md`（今日日志，如存在）
 - **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.workbuddy/memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
-- **轮转检查**：按 `references/记忆规则.md` 中的触发条件和完整轮转算法执行归档
+- **轮转检查**：
+  - **独立使用**：按 `references/记忆规则.md` 中的触发条件和完整轮转算法执行归档
+  - **被 team-orchestrator 调度时**：跳过轮转检查，由调度官 Step 7 统一执行全局轮转
 
 ## 执行流程
 
