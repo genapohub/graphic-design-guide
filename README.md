@@ -39,7 +39,6 @@ zip -r graphic-design-guide.zip graphic-design-guide/ ~/.workbuddy/skills/graphi
 # 先下载并打包
 git clone https://github.com/genapohub/graphic-design-guide.git
 zip -r graphic-design-guide.zip graphic-design-guide/
-zip -r graphic-design-guide.zip graphic-design-guide/
 ```
 然后在 WorkBuddy 桌面端 → **技能市场** → **添加技能/上传技能** → **点击"跳过检测，直接安装"**。
 
