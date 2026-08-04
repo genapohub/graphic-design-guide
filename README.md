@@ -30,13 +30,15 @@
 **方式一：克隆到 skills 目录**
 ```bash
 # 克隆到 workbuddy skill 目录（全局可用）
-git clone https://github.com/genapohub/graphic-design-guide.git ~/.workbuddy/skills/graphic-design-guide
+git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/ ~/.workbuddy/skills/graphic-design-guide
 ```
 
 **方式二：ZIP导入**
 ```bash
 # 先下载并打包
 git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/
 zip -r graphic-design-guide.zip graphic-design-guide/
 ```
 然后在 WorkBuddy 桌面端 → **技能市场** → **添加技能/上传技能** → **点击"跳过检测，直接安装"**。
@@ -47,6 +49,7 @@ zip -r graphic-design-guide.zip graphic-design-guide/
 ```bash
 # 先下载并打包
 git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/
 ```
 然后在 Trae → **设置** → **Rules & Skills** → **创建** → 上传 `graphic-design-guide.zip`。
 
@@ -54,10 +57,12 @@ git clone https://github.com/genapohub/graphic-design-guide.git
 
 ```bash
 # 克隆到 skills 目录
-git clone https://github.com/genapohub/graphic-design-guide.git ~/.codex/skills/graphic-design-guide
+git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/ ~/.codex/skills/graphic-design-guide
 
 # 或使用 cc switch (推荐)
-git clone https://github.com/genapohub/graphic-design-guide.git ~/.cc-switch/skills/graphic-design-guide
+git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/ ~/.cc-switch/skills/graphic-design-guide
 ```
 
 重启 CC Switch客户端/Codex客户端 后自动发现。也可以在对话中输入 `$graphic-design-guide` 手动调用。
@@ -65,7 +70,8 @@ git clone https://github.com/genapohub/graphic-design-guide.git ~/.cc-switch/ski
 ### Cursor
 ```bash
 # 克隆到 skills 目录
-git clone https://github.com/genapohub/graphic-design-guide.git ~/.cursor/skills-cursor/graphic-design-guide
+git clone https://github.com/genapohub/graphic-design-guide.git
+zip -r graphic-design-guide.zip graphic-design-guide/ ~/.cursor/skills-cursor/graphic-design-guide
 ```
 
 重启 Cursor客户端 后自动发现。也可以在对话中输入 `$graphic-design-guide` 手动调用。
