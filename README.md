@@ -52,7 +52,7 @@ git clone https://github.com/genapohub/graphic-design-guide.git ~/.codex/skills/
 git clone https://github.com/genapohub/graphic-design-guide.git ~/.cc-switch/skills/graphic-design-guide
 ```
 
-重启 CC Switch客户端/Codex客户端 后自动发现。也可以在对话中输入 `$graphic-design-guide` 手动调用。
+若选 CC Switch 克隆后需在cc switch客户端-技能中心里导入技能，选中Codex等工具，重启Codex客户端后在对话中输入 $graphic-design-guide 手动调用。
 
 ### Cursor
 ```bash
