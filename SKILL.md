@@ -34,8 +34,8 @@ tags:
 
 本技能的完整记忆管理规则（写日志/轮转归档/自清理）定义在 `references/记忆规则.md`，执行前必须读取。
 
-- **执行前**：读取 `references/记忆规则.md` 中的 Step 0 加载规范 + `.skills-memory/MEMORY.md` 本技能对应分段 + `.skills-memory/YYYY-MM-DD.md`（今日日志，如存在）
-- **执行后**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.skills-memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段
+- **执行前（必须）**：读取 `references/记忆规则.md` 中的 Step 0 加载规范 + `.skills-memory/MEMORY.md` 本技能对应分段 + `.skills-memory/YYYY-MM-DD.md`（今日日志，如存在）
+- **执行后（硬性要求，不可跳过）**：追加 `[graphic-design-guide] 场景描述 → 关键决策` 到 `.skills-memory/YYYY-MM-DD.md`；如有可复用决策，去重后追加到 MEMORY.md 对应分段。**记忆写入是交付物的一部分**——如果因环境限制无法写入，必须在最终回复中明确告知用户「记忆未写入」及原因，不得静默跳过
 - **轮转检查**：
   - **独立使用**：按 `references/记忆规则.md` 中的触发条件和完整轮转算法执行归档
   - **被 team-orchestrator 调度时**：跳过全部记忆操作（写入 + 轮转），由调度官 Step 6（写日志）/ Step 7（轮转归档）统一处理
@@ -97,6 +97,8 @@ tags:
 **版权合规：** 图片版权确认、字体商用授权确认、肖像权确认
 **去AI味：** 反AI视觉八条自检、品牌视觉侵略性测试通过、印刷质感标注完整、排版态度明确
 **交付完整：** 源文件 + 导出文件 + 字体文件 + 交付清单
+
+记忆已写入（`.skills-memory/YYYY-MM-DD.md` 有本次会话条目，无则立即补写）
 
 识别遗漏内容并补充，最后输出交付清单。
 
