@@ -73,20 +73,6 @@ git clone https://github.com/genapohub/graphic-design-guide.git ~/.cursor/skills
 我们品牌要焕新，Logo 和色系都换，出方案
 ```
 
----
-
-## 目录结构
-
-```
-graphic-design-guide/
-├── SKILL.md                  # 主指令
-├── README.md
-├── LICENSE
-├── .gitignore
-└── references/
-    └── 平面设计方法论.md       # 详细方法论
-```
-
 ## 许可
 
 [MIT](LICENSE) © zhangmengbo
